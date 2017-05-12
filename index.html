@@ -3,11 +3,149 @@
   <head>
     <title>My Portfolio</title>
     <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!-- google icon font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize.css / other css-->
+    <link rel='stylesheet' type='text/css' href='materialize/css/materialize.min.css' media='screen,projection'>
+    <link rel='stylesheet' type='text/css' href='animate.css'>
     <link rel='stylesheet' type='text/css' href='style.css'>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        var options = [
+          {selector: '#staggered-test', offset: 0, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+          }},
+        ];
+        Materialize.scrollFire(options);
+				$('.parallax').parallax();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $('#to-top').click(function() {
+          $('html, body').animate({ scrollTop: 0 }, 700);
+        });
+        $('#to-top2').click(function() {
+          $('html, body').animate({ scrollTop: 0 }, 700);
+        });
+        $('#to-projects').click(function() {
+          $('body').scrollTo('#projects');
+        });
+      });
+    </script>
   </head>
   <body>
-    <div id='wrapper'>
-      <h1>Hello World</h1>
+    <div class='navbar-fixed' style='height: 20px;'>
+      <nav class='black'>
+		  	<div class="nav-wrapper">
+        	<a id='to-top' href="#" class="brand-logo" style='font-weight: 100;'>BRIAN SUNG</a>
+        	<ul id="nav-mobile" class="right hide-on-med-and-down">
+        	  <li><a href="#about-me">About Me</a></li>
+        	  <li><a id='to-projects' href="#projects">Projects</a></li>
+        	  <li><a href="#technologies">Technologies</a></li>
+        	  <li><a href="images/BrianSungResume2017.pdf" target='_blank'>Resume</a></li>
+        	</ul>
+      	</div>
+      </nav>
     </div>
+    <div class='parallax-container'>
+      <div class='parallax'><img src='images/code.jpg' style='width: 100%;'></div>
+    </div>
+    <div id='about-me'>
+      <div class='section white'>
+		  	<div class='row container center-align'>
+        	<h1 class='bounce animated'>About Me</h1>
+          <img src='images/teemo.png'>
+		  		<p id='about-text' class='flow-text'>Fo pot urna ut dope. My shizz quis shiznit. Shut the shizzle up pulvinar, ipsizzle dang malesuada go to hizzle, nulla fizzle euismizzle gangsta, break it down luctizzle metizzle nulla my shizz away. Vivamus ullamcorper, tortizzle et crunk ass, fizzle nunc ultricizzle gangster, izzle luctus leo check it out izzle bling bling. Mauris for sure, orci vel volutpizzle i'm in the shizzle, sizzle get down get down luctus nisi, at bibendizzle enizzle shizznit sure. Nullam a velizzle brizzle orci eleifend gangster. Phasellizzle nizzle sheezy. Curabitizzle shizzle my nizzle crocodizzle shiznit boofron pede uhuh ... yih! dawg. Ass stuff nulla, iaculizzle vel, fo sed, egestas gangster, erizzle. Nulla vitae turpizzle quizzle sheezy fizzle go to hizzle. Nam shizzlin dizzle consectetuer daahng dawg. Aliquam erat volutpizzle. Nunc izzle leo izzle fo shizzle my nizzle pretizzle faucibizzle. Crizzle nec lacizzle sed dui yippiyo doggy. Ut nisl. Hizzle yippiyo gangsta. Its fo rizzle uhuh ... yih! you son of a bizzle in mi. Donec sure get down get down.</p>
+		  	</div>
+      </div>
+    </div>
+    <div class='parallax-container'>
+      <div class='parallax'><img src='images/keyboards.png' style='width: 100%;'></div>
+    </div>
+    <div id='projects'>
+      <div class='section white'>
+        <h1 class='center-align'>Projects</h1>
+		  	<div class="carousel carousel-slider center" data-indicators="true">
+      		<div class="carousel-item red white-text" href="#one!">
+      		  <h2>Voter Gab</h2>
+      		  <p class="white-text">This is your first panel</p>
+      		</div>
+      		<div class="carousel-item amber white-text" href="#two!">
+      		  <h2>BYFN Comics</h2>
+      		  <p class="white-text">This is your second panel</p>
+      		</div>
+  	  	</div>
+      </div>
+    </div>
+    <div id='technologies'>
+    <h1 class='center-align'>Technologies</h1>
+    <div class='row'>
+      <ul id='staggered-test'>
+        <li style='opacity: 0;'>
+          <div class='col s4'>
+            <img class='stacks' src='images/python.png'>
+            <p class='flow-text'>Python</p>
+            <p>Python</p>
+            <p>MySQL</p>
+            <p>Flask</p>
+            <p>AJAX</p>
+            <p>Django</p>
+          </div>
+        </li>
+        <li style='opacity: 0;'>
+          <div class='col s4'>
+            <img class='stacks' src='images/mean.png'>
+            <p class='flow-text'>MEAN</p>
+            <p>JavaScript</p>
+            <p>MongoDB</p>
+            <p>Express.js</p>
+            <p>Angular</p>
+            <p>Node.js</p>
+          </div>
+        </li>
+        <li style='opacity: 0;'>
+          <div class='col s4'>
+            <img class='stacks' src='images/ios-swift.png'>
+            <p class='flow-text'>iOS</p>
+            <p>Swift</p>
+            <p>Xcode</p>
+            <p>iOS</p>
+            <p>Core Data</p>
+            <p>iOS Sockets</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class='parallax-container'>
+      <div class='parallax'><img src='images/programmer.jpg' style='width: 100%;'></div>
+    </div>
+		<footer class="page-footer white">
+    	<div class="container">
+      	<div class="row">
+        	<div class="col s12">
+           	<p class="flow-text black-text">Interested in working together, chatting, or grabbing coffee?</p>
+      			</div>
+          </div>
+          <div class="col s12 center-align">
+      			<i class='material-icons' style='font-size: 40px;'>perm_identity</i><p class='flow-text inline-text'>br1ansun9@gmail.com</p><br>
+      			<i class='material-icons' style='font-size: 40px;'>phonelink_ring</i><p class='flow-text inline-text'>(909)440-7396</p>
+            <br>
+            <a href='https://www.linkedin.com/in/brian-sung-bb08ba106/' target='_blank'><img src='images/linked-in.svg' style='height: 40px; width: 40px;'></a>
+            <a href='https://www.github.com/junehoe' target='_blank'><img src='images/github.svg' style='height: 40px; width: 40px;'></a>
+            <a href='https://www.instagram.com/cloud__n9ne/' target='_blank'><img src='images/instagram.jpg' style='height: 40px; width: 40px;'></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+      	<div class="container">
+        	© 2014 Copyright Text
+          <a id='to-top2' href="#" class="black-text text-lighten-4 right flow-text">Back to Top</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

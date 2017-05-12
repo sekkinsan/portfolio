@@ -1,8 +1,21 @@
-*{
+.stacks {
+  margin: auto;
+  display: block;
+  width: 69px;
+  height: 69px;
 }
-
-#wrapper{
-  width: 900px;
-  height: 600px;
-  background-color: red;
+p {
+  text-align: center;
+}
+.col s4 {
+  border: 1px solid black;
+}
+.inline-text {
+  display: inline;
+}
+nav {
+  opacity: 0.5;
+}
+h1 {
+  font-weight: 200;
 }
