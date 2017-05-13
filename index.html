@@ -17,65 +17,78 @@
     <script type='text/javascript'>
       $(document).ready(function() {
         var options = [
-          {selector: '#staggered-test', offset: 0, callback: function(el) {
-            Materialize.showStaggeredList($(el));
+          {selector: '#about-text', offset: 120, callback: function(el) {
+            Materialize.fadeInImage($(el));
+            $(el).addClass('fadeInLeft animated');
+          }},
+          {selector: '#self-portrait', offset: 350, callback: function(el) {
+            Materialize.fadeInImage($(el));
           }},
           {selector: '#about-me-text', offset: 400, callback: function(el) {
             Materialize.fadeInImage($(el));
             $(el).addClass('bounceInDown animated');
           }},
-          {selector: '#self-portrait', offset: 350, callback: function(el) {
+          {selector: '#project-text', offset: 120, callback: function(el) {
             Materialize.fadeInImage($(el));
+            $(el).addClass('slideInDown animated');
           }},
-          {selector: '#about-text', offset: 120, callback: function(el) {
+          {selector: '#project-list', offset: 120, callback: function(el) {
+            Materialize.fadeInImage($(el));
+            $(el).addClass('fadeIn animated');
+          }},
+          {selector: '#tech-text', offset: 400, callback: function(el) {
             Materialize.fadeInImage($(el));
             $(el).addClass('fadeInLeft animated');
+          }},
+          {selector: '#staggered-stacks', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
           }},
         ];
         Materialize.scrollFire(options);
 				$('.parallax').parallax();
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
         $('#to-top').click(function() {
           $('html, body').animate({ scrollTop: 0 }, 700);
         });
         $('#to-top2').click(function() {
           $('html, body').animate({ scrollTop: 0 }, 700);
         });
+        $('#to-about-me').click(function() {
+          $('html, body').animate({ scrollTop: $('#about-me').offset().top }, 700);
+        });
         $('#to-projects').click(function() {
-          $('body').scrollTo('#projects');
+          $('html, body').animate({ scrollTop: $('#projects').offset().top }, 700);
         });
         $('#to-technologies').click(function() {
-          $('#technologies').animate({ scrollTop: scrollTo.offset().top - $('#technologies').offset().top + $('#technologies').scrollTop() });
+          $('html, body').animate({ scrollTop: $('#technologies').offset().top }, 700);
         });
-        $('#to-about-me').click(function() {
-          $('#about-me').animate({ scrollTop: scrollTo.offset().top - $('#about-me').offset().top + $('#about-me').scrollTop() });
+        $('#to-contact').click(function() {
+          $('html, body').animate({ scrollTop: $('#contact').offset().top }, 700);
         });
       });
     </script>
   </head>
   <body>
     <div class='navbar-fixed' style='height: 20px;'>
-      <nav class='black'>
+      <nav class='black' style='height: 30px; line-height: 33px;'>
 		  	<div class="nav-wrapper">
-        	<a id='to-top' href="#" class="brand-logo" style='font-weight: 100;'>BRIAN SUNG</a>
+        	<a id='to-top' href="#" class="brand-logo" style='font-weight: 100;'>brian s.</a>
         	<ul id="nav-mobile" class="right hide-on-med-and-down">
-        	  <li class='navtext'><a id='to-about-me' href="#about-me">About Me</a></li>
-        	  <li class='navtext'><a id='to-projects' href="#projects">Projects</a></li>
-        	  <li class='navtext'><a id='to-technologies' href="#technologies">Technologies</a></li>
-        	  <li class='navtext'><a href="images/BrianSungResume2017.pdf" target='_blank'>Resume</a></li>
+        	  <li class='navtext'><a id='to-about-me' href="#about-me">about me</a></li>
+        	  <li class='navtext'><a id='to-projects' href="#projects">projects</a></li>
+        	  <li class='navtext'><a id='to-technologies' href="#technologies">technologies</a></li>
+        	  <li class='navtext'><a id='to-contact' href="#contact">contact</a></li>
+        	  <li class='navtext'><a href="images/BrianSungResume2017.pdf" target='_blank'>resume</a></li>
         	</ul>
       	</div>
       </nav>
     </div>
-    <div class='parallax-container'>
-      <div class='parallax'><img src='images/code.jpg' style='width: 100%;'></div>
-    </div>
+    <img id='code-wallpaper' src='images/code.jpg' style='width: 100%; height: 100%;'>
     <div id='about-me'>
       <div class='section white'>
 		  	<div class='row container center-align'>
         	<h1 id='about-me-text' style='opacity: 0;'>About Me</h1>
           <img id='self-portrait' src='images/teemo.png' style='opacity: 0;'>
-		  		<p id='about-text' class='flow-text' style='opacity: 0;'>Fo pot urna ut dope. My shizz quis shiznit. Shut the shizzle up pulvinar, ipsizzle dang malesuada go to hizzle, nulla fizzle euismizzle gangsta, break it down luctizzle metizzle nulla my shizz away. Vivamus ullamcorper, tortizzle et crunk ass, fizzle nunc ultricizzle gangster, izzle luctus leo check it out izzle bling bling. Mauris for sure, orci vel volutpizzle i'm in the shizzle, sizzle get down get down luctus nisi, at bibendizzle enizzle shizznit sure. Nullam a velizzle brizzle orci eleifend gangster. Phasellizzle nizzle sheezy. Curabitizzle shizzle my nizzle crocodizzle shiznit boofron pede uhuh ... yih! dawg. Ass stuff nulla, iaculizzle vel, fo sed, egestas gangster, erizzle. Nulla vitae turpizzle quizzle sheezy fizzle go to hizzle. Nam shizzlin dizzle consectetuer daahng dawg. Aliquam erat volutpizzle. Nunc izzle leo izzle fo shizzle my nizzle pretizzle faucibizzle. Crizzle nec lacizzle sed dui yippiyo doggy. Ut nisl. Hizzle yippiyo gangsta. Its fo rizzle uhuh ... yih! you son of a bizzle in mi. Donec sure get down get down.</p>
+		  		<p id='about-text' class='flow-text' style='opacity: 0;'></p>
 		  	</div>
       </div>
     </div>
@@ -83,30 +96,59 @@
       <div class='parallax'><img src='images/keyboards.png' style='width: 100%;'></div>
     </div>
     <div id='projects'>
-      <div class='section white'>
-        <h1 class='center-align'>Projects</h1>
-		  	<div class="carousel carousel-slider center" data-indicators="true">
-      		<div class="carousel-item red white-text" href="#one!">
-      		  <h2 style='font-weight: 200;'>Voter Gab</h2>
-            <p class="white-text" style='font-weight: 200;'>A Community for Voters<br>
-            A voting website where users can vote on endorsements made by their respective groups.<br>
-            Features: Login/registration,
-      		  <p class="white-text" style='font-weight: 200;'>Technologies Used:</p>
-            <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/voter_gab" target='_blank'>GitHub</a>
-      		</div>
-      		<div class="carousel-item amber white-text" href="#two!">
-      		  <h2 style='font-weight: 200;'>BYFN Comics</h2>
-      		  <p class="white-text" style='font-weight: 200;'>This is your second panel</p>
-      		</div>
-  	  	</div>
+      <div class='section container'>
+        <h1 id='project-text' class='center-align' style='opacity: 0;'>Projects</h1>
+				<ul id='project-list' class="collapsible" data-collapsible="accordion" style='opacity: 0;'>
+					<li>
+			      <div class="collapsible-header"><i class="material-icons">web</i>Voter Gab</div>
+			      <div class="collapsible-body">
+              <span>A Community Tool for Voters!</span><br><br>
+              <span>A voting website where users can vote on endorsements made by their respective groups.</span><br><br>
+              <span>Features: Login/registration, users can create/follow groups, membership system with special privileges, users can kick members, users can propose endorsements, global and group-specific chatrooms.</span><br><br>
+              <span>Technologies used: MongoDB, Express, AngularJS, Node.js, Socket.io, Bootstrap, AWS</span><br><br>
+              <a class='waves-effect waves-light btn' href='http://54.148.42.69/#!/' target='_blank'>View Site</a>
+              <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/voter_gab' target='_blank'>View on GitHub</a>
+            </div>
+			    </li>
+			    <li>
+			      <div class="collapsible-header"><i class="material-icons">web</i>BYFN Comics</div>
+			      <div class="collapsible-body">
+              <span>A Comic Book E-commerce Website</span><br><br>
+              <span>Features:</span><br>
+              <span>Consumer side - ability to search for a comic book, ability to add comic books to shopping cart, checkout and transactions using Stripe API</span><br>
+              <span>Admin side - ability to add new comic books, promote users to admins</span><br>
+              <span>Technologies used: Python, Django, MySQL, Stripe</span><br><br>
+              <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/comic_store' target='_blank'>View on GitHub</a>
+            </div>
+			    </li>
+			    <li>
+			      <div class="collapsible-header"><i class="material-icons">games</i>TicTacToe</div>
+			      <div class="collapsible-body">
+              <span>A simple terminal-based tictactoe game written using TDD</span><br><br>
+              <span>Features: ability to choose marker (X or O), choose which player goes first, human vs. AI with easy and medium difficulties, human vs. human, restart game after it ends</span><br><br>
+              <span>Technologies used: Ruby, RSpec</span><br><br>
+              <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/tictactoe' target='_blank'>View on GitHub</a>
+            </div>
+			    </li>
+			    <li>
+			      <div class="collapsible-header"><i class="material-icons">games</i>Mastermind</div>
+			      <div class="collapsible-body">
+              <span>A codebreaker game written using TDD</span><br><br>
+              <span>Features: player can set the length of the code to break (3 or 7), amount of tries scales with the length of the code, prompts player which characters in the code are exact matches and which characters are near matches</span><br><br>
+              <span>Technologies used: Ruby, RSpec</span><br><br>
+              <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/ruby_mastermind' target='_blank'>View on GitHub</a>
+            </div>
+			    </li>
+			  </ul>
       </div>
     </div>
     <div id='technologies'>
-    <h1 class='center-align'>Technologies</h1>
-    <div class='row'>
-      <ul id='staggered-test'>
+      <div class='section white'>
+    <h1 id='tech-text' class='center-align' style='opacity: 0;'>Technologies</h1>
+    <div class='row container'>
+      <ul id='staggered-stacks'>
         <li style='opacity: 0;'>
-          <div class='col s4'>
+          <div class='col s3'>
             <img class='stacks' src='images/python.png'>
             <p class='flow-text'>Python</p>
             <p>Python</p>
@@ -117,7 +159,7 @@
           </div>
         </li>
         <li style='opacity: 0;'>
-          <div class='col s4'>
+          <div class='col s3'>
             <img class='stacks' src='images/mean.png'>
             <p class='flow-text'>MEAN</p>
             <p>JavaScript</p>
@@ -128,7 +170,7 @@
           </div>
         </li>
         <li style='opacity: 0;'>
-          <div class='col s4'>
+          <div class='col s3'>
             <img class='stacks' src='images/ios-swift.png'>
             <p class='flow-text'>iOS</p>
             <p>Swift</p>
@@ -138,14 +180,26 @@
             <p>iOS Sockets</p>
           </div>
         </li>
+        <li style='opacity: 0;'>
+          <div class='col s3'>
+            <img class='stacks' src='images/ruby.png'>
+            <p class='flow-text'>Ruby</p>
+            <p>Ruby</p>
+            <p>RSpec</p>
+            <p>Rails (in progress)</p>
+            <p>Capybara (in progress)</p>
+            <p>PostgreSQL (in progress)</p>
+          </div>
+        </li>
       </ul>
+    </div>
     </div>
     </div>
     <div class='parallax-container'>
       <div class='parallax'><img src='images/programmer.jpg' style='width: 100%;'></div>
     </div>
 		<footer class="page-footer white">
-    	<div class="container">
+    	<div id='contact' class="container">
       	<div class="row">
         	<div class="col s12">
            	<p class="flow-text black-text">Interested in working together, chatting, or grabbing coffee?</p>
@@ -158,13 +212,16 @@
             <a href='https://www.linkedin.com/in/brian-sung-bb08ba106/' target='_blank'><img src='images/linked-in.svg' style='height: 40px; width: 40px;'></a>
             <a href='https://www.github.com/junehoe' target='_blank'><img src='images/github.svg' style='height: 40px; width: 40px;'></a>
             <a href='https://www.instagram.com/cloud__n9ne/' target='_blank'><img src='images/instagram.jpg' style='height: 40px; width: 40px;'></a>
+            <br><br>
+            <br><br>
+            <br><br>
+            <a id='to-top2' href="#" class="black-text text-lighten-4 flow-text">Back to Top</a>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
       	<div class="container">
-        	© 2014 Copyright Text
-          <a id='to-top2' href="#" class="black-text text-lighten-4 right flow-text">Back to Top</a>
+          <span style='color: black;'>© 2017 junehoe</span>
         </div>
       </div>
     </footer>

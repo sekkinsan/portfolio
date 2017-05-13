@@ -13,12 +13,13 @@ p {
 .inline-text {
   display: inline;
 }
-nav {
-  opacity: 0.5;
-}
 h1 {
   font-weight: 200;
 }
 .navtext {
   font-weight: 200;
+}
+#code-wallpaper {
+  vertical-align: top;
+  display: inline-block;
 }
