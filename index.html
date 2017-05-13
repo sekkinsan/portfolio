@@ -20,6 +20,17 @@
           {selector: '#staggered-test', offset: 0, callback: function(el) {
             Materialize.showStaggeredList($(el));
           }},
+          {selector: '#about-me-text', offset: 400, callback: function(el) {
+            Materialize.fadeInImage($(el));
+            $(el).addClass('bounceInDown animated');
+          }},
+          {selector: '#self-portrait', offset: 350, callback: function(el) {
+            Materialize.fadeInImage($(el));
+          }},
+          {selector: '#about-text', offset: 120, callback: function(el) {
+            Materialize.fadeInImage($(el));
+            $(el).addClass('fadeInLeft animated');
+          }},
         ];
         Materialize.scrollFire(options);
 				$('.parallax').parallax();
@@ -33,6 +44,12 @@
         $('#to-projects').click(function() {
           $('body').scrollTo('#projects');
         });
+        $('#to-technologies').click(function() {
+          $('#technologies').animate({ scrollTop: scrollTo.offset().top - $('#technologies').offset().top + $('#technologies').scrollTop() });
+        });
+        $('#to-about-me').click(function() {
+          $('#about-me').animate({ scrollTop: scrollTo.offset().top - $('#about-me').offset().top + $('#about-me').scrollTop() });
+        });
       });
     </script>
   </head>
@@ -42,10 +59,10 @@
 		  	<div class="nav-wrapper">
         	<a id='to-top' href="#" class="brand-logo" style='font-weight: 100;'>BRIAN SUNG</a>
         	<ul id="nav-mobile" class="right hide-on-med-and-down">
-        	  <li><a href="#about-me">About Me</a></li>
-        	  <li><a id='to-projects' href="#projects">Projects</a></li>
-        	  <li><a href="#technologies">Technologies</a></li>
-        	  <li><a href="images/BrianSungResume2017.pdf" target='_blank'>Resume</a></li>
+        	  <li class='navtext'><a id='to-about-me' href="#about-me">About Me</a></li>
+        	  <li class='navtext'><a id='to-projects' href="#projects">Projects</a></li>
+        	  <li class='navtext'><a id='to-technologies' href="#technologies">Technologies</a></li>
+        	  <li class='navtext'><a href="images/BrianSungResume2017.pdf" target='_blank'>Resume</a></li>
         	</ul>
       	</div>
       </nav>
@@ -56,9 +73,9 @@
     <div id='about-me'>
       <div class='section white'>
 		  	<div class='row container center-align'>
-        	<h1 class='bounce animated'>About Me</h1>
-          <img src='images/teemo.png'>
-		  		<p id='about-text' class='flow-text'>Fo pot urna ut dope. My shizz quis shiznit. Shut the shizzle up pulvinar, ipsizzle dang malesuada go to hizzle, nulla fizzle euismizzle gangsta, break it down luctizzle metizzle nulla my shizz away. Vivamus ullamcorper, tortizzle et crunk ass, fizzle nunc ultricizzle gangster, izzle luctus leo check it out izzle bling bling. Mauris for sure, orci vel volutpizzle i'm in the shizzle, sizzle get down get down luctus nisi, at bibendizzle enizzle shizznit sure. Nullam a velizzle brizzle orci eleifend gangster. Phasellizzle nizzle sheezy. Curabitizzle shizzle my nizzle crocodizzle shiznit boofron pede uhuh ... yih! dawg. Ass stuff nulla, iaculizzle vel, fo sed, egestas gangster, erizzle. Nulla vitae turpizzle quizzle sheezy fizzle go to hizzle. Nam shizzlin dizzle consectetuer daahng dawg. Aliquam erat volutpizzle. Nunc izzle leo izzle fo shizzle my nizzle pretizzle faucibizzle. Crizzle nec lacizzle sed dui yippiyo doggy. Ut nisl. Hizzle yippiyo gangsta. Its fo rizzle uhuh ... yih! you son of a bizzle in mi. Donec sure get down get down.</p>
+        	<h1 id='about-me-text' style='opacity: 0;'>About Me</h1>
+          <img id='self-portrait' src='images/teemo.png' style='opacity: 0;'>
+		  		<p id='about-text' class='flow-text' style='opacity: 0;'>Fo pot urna ut dope. My shizz quis shiznit. Shut the shizzle up pulvinar, ipsizzle dang malesuada go to hizzle, nulla fizzle euismizzle gangsta, break it down luctizzle metizzle nulla my shizz away. Vivamus ullamcorper, tortizzle et crunk ass, fizzle nunc ultricizzle gangster, izzle luctus leo check it out izzle bling bling. Mauris for sure, orci vel volutpizzle i'm in the shizzle, sizzle get down get down luctus nisi, at bibendizzle enizzle shizznit sure. Nullam a velizzle brizzle orci eleifend gangster. Phasellizzle nizzle sheezy. Curabitizzle shizzle my nizzle crocodizzle shiznit boofron pede uhuh ... yih! dawg. Ass stuff nulla, iaculizzle vel, fo sed, egestas gangster, erizzle. Nulla vitae turpizzle quizzle sheezy fizzle go to hizzle. Nam shizzlin dizzle consectetuer daahng dawg. Aliquam erat volutpizzle. Nunc izzle leo izzle fo shizzle my nizzle pretizzle faucibizzle. Crizzle nec lacizzle sed dui yippiyo doggy. Ut nisl. Hizzle yippiyo gangsta. Its fo rizzle uhuh ... yih! you son of a bizzle in mi. Donec sure get down get down.</p>
 		  	</div>
       </div>
     </div>
@@ -70,12 +87,16 @@
         <h1 class='center-align'>Projects</h1>
 		  	<div class="carousel carousel-slider center" data-indicators="true">
       		<div class="carousel-item red white-text" href="#one!">
-      		  <h2>Voter Gab</h2>
-      		  <p class="white-text">This is your first panel</p>
+      		  <h2 style='font-weight: 200;'>Voter Gab</h2>
+            <p class="white-text" style='font-weight: 200;'>A Community for Voters<br>
+            A voting website where users can vote on endorsements made by their respective groups.<br>
+            Features: Login/registration,
+      		  <p class="white-text" style='font-weight: 200;'>Technologies Used:</p>
+            <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/voter_gab" target='_blank'>GitHub</a>
       		</div>
       		<div class="carousel-item amber white-text" href="#two!">
-      		  <h2>BYFN Comics</h2>
-      		  <p class="white-text">This is your second panel</p>
+      		  <h2 style='font-weight: 200;'>BYFN Comics</h2>
+      		  <p class="white-text" style='font-weight: 200;'>This is your second panel</p>
       		</div>
   	  	</div>
       </div>
