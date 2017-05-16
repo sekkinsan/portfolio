@@ -18,6 +18,7 @@ $(document).ready(function() {
       $(el).addClass('slideInDown animated');
       setTimeout(function() {
         $("#project-list").addClass('fadeIn animated');
+        $("#project-tooltip").addClass('fadeIn animated');
       }, 1000);
     }},
     {selector: '#tech-text', offset: 400, callback: function(el) {
