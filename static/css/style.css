@@ -46,3 +46,11 @@ h1 {
   width: 35%;
   height: 35%;
 }
+@ media only screen and (max-width: 500px) {
+  .landing-name {
+    font-size: .3em;
+  }
+  .landing-description {
+    font-size: .3em;
+  }
+}
