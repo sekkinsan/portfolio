@@ -1,0 +1,48 @@
+.stacks {
+  margin: auto;
+  display: block;
+  width: 69px;
+  height: 69px;
+}
+p {
+  text-align: center;
+}
+.col s4 {
+  border: 1px solid black;
+}
+.inline-text {
+  display: inline;
+}
+h1 {
+  font-weight: 200;
+}
+.navtext {
+  font-weight: 200;
+}
+#main-wallpaper-div {
+  height: 100vh;
+}
+.main-wallpaper {
+  max-width: 100%;
+  height: auto;
+}
+.landing-name {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 150pt;
+}
+.landing-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 75pt;
+}
+#self-portrait {
+  width: 35%;
+  height: 35%;
+}
