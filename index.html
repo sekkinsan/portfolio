@@ -13,229 +13,221 @@
     <link rel='stylesheet' type='text/css' href='static/css/materialize/css/materialize.min.css' media='screen,projection'>
     <link rel='stylesheet' type='text/css' href='static/css/animate.css'>
     <link rel='stylesheet' type='text/css' href='static/css/style.css'>
+  </head>
+  <body>
+    <div class="custom-parallax">
+      <div class="caption">
+        <span class="border">BRIAN SUNG</span>
+        <br><br><br>
+        <span class="border">FULL-STACK WEB DEVELOPER</span>
+        <br>
+        <a id="landing-btn" class="btn-large btn-floating black pulse initial-hidden" href="#"><i class="material-icons">play_for_work</i></a>
+      </div>
+    </div>
+    <!-- ABOUT ME -->
+    <div id="about-me">
+      <div class="section white">
+	  	  <div class="row container center-align">
+        	<h1 id="about-me-text" class="initial-hidden">About Me</h1>
+          <img id='self-portrait' class="initial-hidden circle" src='static/images/me.jpg'>
+	  	  	<p id="about-text" class="flow-text initial-hidden">
+          A knowledge-driven and passionate developer who loves a good challenge for the opportunity to learn. I am a graduate from California Polytechnic State University, Pomona with a degree in Computer Engineering and also a recent graduate from Coding Dojo, a coding bootcamp. I am currently <span style="color: green;">seeking opportunities</span> to apply my skills and for more learning opportunites in hopes to reach my ultimate goal as a developer.
+          </p>
+	  	  </div>
+      </div>
+    </div>
+    <div class="custom-parallax2"></div>
+    <!-- PROJECTS -->
+    <div id="projects">
+      <div class="section container">
+        <h1 id="project-text" class="center-align initial-hidden">Projects</h1>
+			  <ul id="project-list" class="collapsible initial-hidden" data-collapsible="accordion">
+			  	<li>
+		        <div class="collapsible-header"><i class="material-icons">web</i>Voter Gab</div>
+		        <div class="collapsible-body">
+              <span>A Community Tool for Voters!</span><br><br>
+              <span>A voting website where users can vote on endorsements made by their respective groups.</span><br><br>
+              <span>Features: Login/registration, users can create/follow groups, membership system with special privileges, users can kick members, users can propose endorsements, global and group-specific chatrooms.</span><br><br>
+              <span>Technologies used: MongoDB, Express, AngularJS, Node.js, Socket.io, Bootstrap, AWS</span><br><br>
+              <a class="waves-effect waves-light btn" href="http://54.148.42.69/#!/" target="_blank">View Site</a>
+              <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/voter_gab" target="_blank">View on GitHub</a>
+            </div>
+		      </li>
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">web</i>BYFN Comics</div>
+		        <div class="collapsible-body">
+              <span>A Comic Book E-commerce Website</span><br><br>
+              <span>Features:</span><br>
+              <span>Consumer side - ability to search for a comic book, ability to add comic books to shopping cart, checkout and transactions using Stripe API</span><br>
+              <span>Admin side - ability to add new comic books, promote users to admins</span><br>
+              <span>Technologies used: Python, Django, MySQL, Stripe</span><br><br>
+              <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/comic_store" target="_blank">View on GitHub</a>
+            </div>
+		      </li>
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">games</i>TicTacToe</div>
+		        <div class="collapsible-body">
+              <span>A simple terminal-based tictactoe game written using TDD</span><br><br>
+              <span>Features: ability to choose marker (X or O), choose which player goes first, human vs. AI with easy and medium difficulties, human vs. human, restart game after it ends</span><br><br>
+              <span>Technologies used: Ruby, RSpec</span><br><br>
+              <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/tictactoe" target="_blank">View on GitHub</a>
+            </div>
+		      </li>
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">games</i>Mastermind</div>
+		        <div class="collapsible-body">
+              <span>A codebreaker game written using TDD</span><br><br>
+              <span>Features: player can set the length of the code to break (3 or 7), amount of tries scales with the length of the code, prompts player which characters in the code are exact matches and which characters are near matches</span><br><br>
+              <span>Technologies used: Ruby, RSpec</span><br><br>
+              <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/ruby_mastermind" target="_blank">View on GitHub</a>
+            </div>
+		      </li>
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">web</i>My Portfolio</div>
+		        <div class="collapsible-body">
+              <span>My personal website built from scratch!</span><br><br>
+              <span>Technologies used: HTML5, CSS3, JavaScript, jQuery, MaterializeCSS, AnimateCSS, AWS</span><br><br>
+              <a class="waves-effect waves-light btn" href="https://www.github.com/junehoe/portfolio" target="_blank">View on GitHub</a>
+            </div>
+		      </li>
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">games</i>League of Legends App</div>
+		        <div class="collapsible-body">
+              <span>(In progress) Summoner stat look-up app for iOS</span><br><br>
+              <span>Features: a form where users can input summoner names and get back statistics of that particular summoner</span><br><br>
+              <span>Technologies using: Xcode, Swift 3, Riot League of Legends API</span><br><br>
+            </div>
+		      </li>
+		    </ul>
+        <p id="project-tooltip" class="initial-hidden center-align">** click project to view more details ** </p>
+      </div>
+    </div>
+    <div class="custom-parallax3"></div>
+    <!-- TECHNOLOGIES -->
+    <div id="technologies">
+      <div class="section white">
+        <h1 id="tech-text" class="center-align initial-hidden">Technologies</h1>
+        <div class="row container">
+          <ul id="staggered-stacks">
+            <li>
+              <div class="col s3">
+                <img src="static/images/python.png">
+                <p class="flow-text">Python</p>
+                <p>Python</p>
+                <p>MySQL</p>
+                <p>Flask</p>
+                <p>AJAX</p>
+                <p>Django</p>
+              </div>
+            </li>
+            <li>
+              <div class="col s3">
+                <img src="static/images/mean.png">
+                <p class="flow-text">MEAN</p>
+                <p>JavaScript</p>
+                <p>MongoDB</p>
+                <p>Express.js</p>
+                <p>Angular</p>
+                <p>Node.js</p>
+              </div>
+            </li>
+            <li>
+              <div class="col s3">
+                <img src="static/images/ios-swift.png">
+                <p class="flow-text">iOS</p>
+                <p>Swift</p>
+                <p>Xcode</p>
+                <p>iOS</p>
+                <p>Core Data</p>
+                <p>iOS Sockets</p>
+              </div>
+            </li>
+            <li>
+              <div class="col s3">
+                <img src="static/images/ruby.png">
+                <p class="flow-text">Ruby</p>
+                <p>Ruby</p>
+                <p>RSpec</p>
+                <p>Rails (in progress)</p>
+                <p>Capybara (in progress)</p>
+                <p>PostgreSQL (in progress)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row container">
+          <ul id="staggered-stacks2">
+            <li>
+              <div class="col s4">
+                <img src="static/images/bootstrap.png">
+                <p class="flow-text">Bootstrap</p><br>
+                <img src="static/images/materialize.png">
+                <p class="flow-text">Materialize</p><br>
+                <img src="static/images/jquery.png">
+                <p class="flow-text">jQuery</p>
+              </div>
+            </li>
+            <li style='opacity: 0;'>
+              <div class='col s4'>
+                <img class='stacks' src='static/images/html.png'>
+                <p class='flow-text'>HTML5</p><br>
+                <img class='stacks' src='static/images/css.png'>
+                <p class='flow-text'>CSS3</p><br>
+                <img class='stacks' src='static/images/vim.png'>
+                <p class='flow-text'>Vim</p>
+              </div>
+            </li>
+            <li style='opacity: 0;'>
+              <div class='col s4'>
+                <img class='stacks' src='static/images/react.png'>
+                <p class='flow-text'>React</p><br>
+                <img class='stacks' src='static/images/socketio.gif'>
+                <p class='flow-text'>Socket.io</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="custom-parallax4"></div>
+    <!-- FOOTER -->
+		<footer class="page-footer white">
+    	<div id="contact" class="container">
+      	<div class="row">
+        	<div id="contact-header" class="col s12 initial-hidden">
+           	<p class="flow-text black-text center-align">Interested in working together, chatting, or grabbing coffee?</p>
+      		</div>
+        </div>
+        <div id="contact-text" class="center-align initial-hidden">
+          <div id="email-phone" class="row">
+            <div class="col s6">
+      		    <i class="material-icons">perm_identity</i><p class="flow-text inline-text">br1ansun9@gmail.com</p>
+            </div>
+            <div class="col s6">
+      		    <i class="material-icons">phonelink_ring</i><p class="flow-text inline-text">(909)440-7396</p>
+            </div>
+          </div>
+          <br>
+          <a href="https://www.linkedin.com/in/brian-sung-bb08ba106/" target="_blank"><img src="static/images/linked-in.svg"></a>
+          <a href="https://www.github.com/junehoe" target='_blank'><img src='static/images/github.svg' style='height: 40px; width: 40px;'></a>
+          <a href="https://www.instagram.com/cloud__n9ne/" target="_blank"><img src="static/images/instagram.jpg"></a>
+          <a href="https://www.soundcloud.com/cloud_9000/" target="_blank"><img src="static/images/soundcloud.png"></a>
+          <a href="static/docs/BrianSungResume2017.pdf" target="_blank"><img src="static/images/resume.png"></a>
+          <br><br>
+          <br><br>
+          <a id="to-top2" href="#" class="black-text text-lighten-4 flow-text initial-hidden">Back to Top</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+      	<div class="container">
+          <span style="color: black;">© 2017 junehoe</span>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="static/css/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="static/js/main.js"></script>
-  </head>
-  <body>
-    <div id='wrapper'>
-      <div id='landing'>
-        <div class='navbar-fixed' style='height: 20px;'>
-          <nav class='black' style='height: 30px; line-height: 33px;'>
-		      	<div class="nav-wrapper">
-            	<a id='to-top' href="#" class="brand-logo" style='font-weight: 100;'>brian s.</a>
-            	<ul id="nav-mobile" class="right hide-on-med-and-down">
-            	  <li class='navtext'><a id='to-about-me' href="#">about</a></li>
-            	  <li class='navtext'><a id='to-projects' href="#">projects</a></li>
-            	  <li class='navtext'><a id='to-technologies' href="#">technologies</a></li>
-            	  <li class='navtext'><a id='to-contact' href="#">contact</a></li>
-            	  <li class='navtext'><a href="static/docs/BrianSungResume2017.pdf" target='_blank'>resume</a></li>
-              </ul>
-          	</div>
-          </nav>
-        </div>
-        <div class='landing-image'>
-          <img class='main-wallpaper' src='static/images/bgg.jpg'>
-          <h1 class='landing-name center-align zoomInDown animated'>brian sung</h1>
-        </div>
-      </div>
-      <div id='about-me'>
-        <div class='section white'>
-		  	  <div class='row container center-align'>
-          	<h1 id='about-me-text' style='opacity: 0;'>About Me</h1>
-            <img id='self-portrait' src='static/images/me.jpg' style='opacity: 0;'>
-		  	  	<p id='about-text' class='flow-text' style='opacity: 0;'>
-            A knowledge-driven and passionate developer who loves a good challenge for the opportunity to learn. I am a graduate from California Polytechnic State University, Pomona with a degree in Computer Engineering and also a recent graduate from Coding Dojo, a coding bootcamp. I am currently <span style="color: green;">seeking opportunities</span> to apply my skills and for more learning opportunites in hopes to reach my ultimate goal as a developer.
-            </p>
-		  	  </div>
-        </div>
-      </div>
-      <div class='parallax-container'>
-        <div class='parallax'><img src='static/images/keyboards.png' style='width: 100%;'></div>
-      </div>
-      <div id='projects'>
-        <div class='section container'>
-          <h1 id='project-text' class='center-align' style='opacity: 0;'>Projects</h1>
-				  <ul id='project-list' class="collapsible" data-collapsible="accordion" style='opacity: 0;'>
-				  	<li>
-			        <div class="collapsible-header"><i class="material-icons">web</i>Voter Gab</div>
-			        <div class="collapsible-body">
-                <span>A Community Tool for Voters!</span><br><br>
-                <span>A voting website where users can vote on endorsements made by their respective groups.</span><br><br>
-                <span>Features: Login/registration, users can create/follow groups, membership system with special privileges, users can kick members, users can propose endorsements, global and group-specific chatrooms.</span><br><br>
-                <span>Technologies used: MongoDB, Express, AngularJS, Node.js, Socket.io, Bootstrap, AWS</span><br><br>
-                <a class='waves-effect waves-light btn' href='http://54.148.42.69/#!/' target='_blank'>View Site</a>
-                <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/voter_gab' target='_blank'>View on GitHub</a>
-              </div>
-			      </li>
-			      <li>
-			        <div class="collapsible-header"><i class="material-icons">web</i>BYFN Comics</div>
-			        <div class="collapsible-body">
-                <span>A Comic Book E-commerce Website</span><br><br>
-                <span>Features:</span><br>
-                <span>Consumer side - ability to search for a comic book, ability to add comic books to shopping cart, checkout and transactions using Stripe API</span><br>
-                <span>Admin side - ability to add new comic books, promote users to admins</span><br>
-                <span>Technologies used: Python, Django, MySQL, Stripe</span><br><br>
-                <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/comic_store' target='_blank'>View on GitHub</a>
-              </div>
-			      </li>
-			      <li>
-			        <div class="collapsible-header"><i class="material-icons">games</i>TicTacToe</div>
-			        <div class="collapsible-body">
-                <span>A simple terminal-based tictactoe game written using TDD</span><br><br>
-                <span>Features: ability to choose marker (X or O), choose which player goes first, human vs. AI with easy and medium difficulties, human vs. human, restart game after it ends</span><br><br>
-                <span>Technologies used: Ruby, RSpec</span><br><br>
-                <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/tictactoe' target='_blank'>View on GitHub</a>
-              </div>
-			      </li>
-			      <li>
-			        <div class="collapsible-header"><i class="material-icons">games</i>Mastermind</div>
-			        <div class="collapsible-body">
-                <span>A codebreaker game written using TDD</span><br><br>
-                <span>Features: player can set the length of the code to break (3 or 7), amount of tries scales with the length of the code, prompts player which characters in the code are exact matches and which characters are near matches</span><br><br>
-                <span>Technologies used: Ruby, RSpec</span><br><br>
-                <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/ruby_mastermind' target='_blank'>View on GitHub</a>
-              </div>
-			      </li>
-			      <li>
-			        <div class="collapsible-header"><i class="material-icons">web</i>My Portfolio</div>
-			        <div class="collapsible-body">
-                <span>My personal website built from scratch!</span><br><br>
-                <span>Technologies used: HTML5, CSS3, JavaScript, jQuery, MaterializeCSS, AnimateCSS, AWS</span><br><br>
-                <a class='waves-effect waves-light btn' href='https://www.github.com/junehoe/portfolio' target='_blank'>View on GitHub</a>
-              </div>
-			      </li>
-			      <li>
-			        <div class="collapsible-header"><i class="material-icons">games</i>League of Legends App</div>
-			        <div class="collapsible-body">
-                <span>(In progress) Summoner stat look-up app for iOS</span><br><br>
-                <span>Features: a form where users can input summoner names and get back statistics of that particular summoner</span><br><br>
-                <span>Technologies using: Xcode, Swift 3, Riot League of Legends API</span><br><br>
-              </div>
-			      </li>
-			    </ul>
-          <p id='project-tooltip' style='opacity: 0;'>** click project to view more details ** </p>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="static/images/rocket.png"></div>
-      </div>
-      <div id='technologies'>
-        <div class='section white'>
-          <h1 id='tech-text' class='center-align' style='opacity: 0;'>Technologies</h1>
-          <div class='row container'>
-            <ul id='staggered-stacks'>
-              <li style='opacity: 0;'>
-                <div class='col s3'>
-                  <img class='stacks' src='static/images/python.png'>
-                  <p class='flow-text'>Python</p>
-                  <p>Python</p>
-                  <p>MySQL</p>
-                  <p>Flask</p>
-                  <p>AJAX</p>
-                  <p>Django</p>
-                </div>
-              </li>
-              <li style='opacity: 0;'>
-                <div class='col s3'>
-                  <img class='stacks' src='static/images/mean.png'>
-                  <p class='flow-text'>MEAN</p>
-                  <p>JavaScript</p>
-                  <p>MongoDB</p>
-                  <p>Express.js</p>
-                  <p>Angular</p>
-                  <p>Node.js</p>
-                </div>
-              </li>
-              <li style='opacity: 0;'>
-                <div class='col s3'>
-                  <img class='stacks' src='static/images/ios-swift.png'>
-                  <p class='flow-text'>iOS</p>
-                  <p>Swift</p>
-                  <p>Xcode</p>
-                  <p>iOS</p>
-                  <p>Core Data</p>
-                  <p>iOS Sockets</p>
-                </div>
-              </li>
-              <li style='opacity: 0;'>
-                <div class='col s3'>
-                  <img class='stacks' src='static/images/ruby.png'>
-                  <p class='flow-text'>Ruby</p>
-                  <p>Ruby</p>
-                  <p>RSpec</p>
-                  <p>Rails (in progress)</p>
-                  <p>Capybara (in progress)</p>
-                  <p>PostgreSQL (in progress)</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class='row container'>
-            <ul id='staggered-stacks2'>
-              <li style='opacity: 0;'>
-                <div class='col s4'>
-                  <img class="stacks" src="static/images/bootstrap.png">
-                  <p class='flow-text'>Bootstrap</p><br>
-                  <img class="stacks" src="static/images/materialize.png">
-                  <p class='flow-text'>Materialize</p><br>
-                  <img class="stacks" src="static/images/jquery.png">
-                  <p class='flow-text'>jQuery</p>
-                </div>
-              </li>
-              <li style='opacity: 0;'>
-                <div class='col s4'>
-                  <img class='stacks' src='static/images/html.png'>
-                  <p class='flow-text'>HTML5</p><br>
-                  <img class='stacks' src='static/images/css.png'>
-                  <p class='flow-text'>CSS3</p><br>
-                  <img class='stacks' src='static/images/vim.png'>
-                  <p class='flow-text'>Vim</p>
-                </div>
-              </li>
-              <li style='opacity: 0;'>
-                <div class='col s4'>
-                  <img class='stacks' src='static/images/react.png'>
-                  <p class='flow-text'>React</p><br>
-                  <img class='stacks' src='static/images/socketio.gif'>
-                  <p class='flow-text'>Socket.io</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class='parallax-container'>
-        <div class='parallax'><img src='static/images/programmer.jpg' style='width: 100%;'></div>
-      </div>
-		  <footer class="page-footer white">
-      	<div id='contact' class="container">
-        	<div class="row">
-          	<div id='contact-header' class="col s12" style="opacity: 0;">
-             	<p class="flow-text black-text">Interested in working together, chatting, or grabbing coffee?</p>
-        		</div>
-          </div>
-          <div id='contact-text' class="col s12 center-align" style="opacity: 0;">
-        		<i class='material-icons' style='font-size: 40px;'>perm_identity</i><p class='flow-text inline-text'>br1ansun9@gmail.com</p><br>
-        		<i class='material-icons' style='font-size: 40px;'>phonelink_ring</i><p class='flow-text inline-text'>(909)440-7396</p>
-            <br>
-            <a href='https://www.linkedin.com/in/brian-sung-bb08ba106/' target='_blank'><img src='static/images/linked-in.svg' style='height: 40px; width: 40px;'></a>
-            <a href='https://www.github.com/junehoe' target='_blank'><img src='static/images/github.svg' style='height: 40px; width: 40px;'></a>
-            <a href='https://www.instagram.com/cloud__n9ne/' target='_blank'><img src='static/images/instagram.jpg' style='height: 40px; width: 40px;'></a>
-            <a href='https://www.soundcloud.com/cloud_9000/' target='_blank'><img src='static/images/soundcloud.png' style='height: 40px; width: 40px;'></a>
-            <br><br>
-            <br><br>
-            <br><br>
-            <a id='to-top2' href="#" class="black-text text-lighten-4 flow-text" style="opacity: 0;">Back to Top</a>
-          </div>
-        </div>
-        <div class="footer-copyright">
-        	<div class="container">
-            <span style='color: black;'>© 2017 junehoe</span>
-          </div>
-        </div>
-      </footer>
-    </div>
   </body>
 </html>

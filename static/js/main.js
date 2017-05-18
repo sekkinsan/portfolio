@@ -1,6 +1,7 @@
 $(document).ready(function() {
   setTimeout(function() {
-    $('.landing-image').append("<h1 class='landing-description center-align zoomInDown animated'>full-stack web developer</h1>");
+    $('#landing-btn').addClass("fadeIn animated");
+    Materialize.fadeInImage("#landing-btn");
   }, 1500);
   var options = [
     {selector: '#about-text', offset: 120, callback: function(el) {
@@ -50,6 +51,9 @@ $(document).ready(function() {
     $('html, body').animate({ scrollTop: 0 }, 700);
   });
   $('#to-about-me').click(function() {
+    $('html, body').animate({ scrollTop: $('#about-me').offset().top }, 700);
+  });
+  $('#landing-btn').click(function() {
     $('html, body').animate({ scrollTop: $('#about-me').offset().top }, 700);
   });
   $('#to-projects').click(function() {

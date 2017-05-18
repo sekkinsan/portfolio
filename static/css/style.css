@@ -1,56 +1,113 @@
-.stacks {
+body, html {
+  height: 100%;
+}
+h1 {
+  font-weight: 200;
+}
+.custom-parallax {
+  background-image: url("../images/bgg.jpg");
+  min-height: 100%;
+}
+.custom-parallax2 {
+  background-image: url("../images/keyboards.png");
+  min-height: 400px;
+}
+.custom-parallax3 {
+  background-image: url("../images/rocket.jpg");
+  min-height: 400px;
+}
+.custom-parallax4 {
+  background-image: url("../images/programmer.jpg");
+  min-height: 400px;
+}
+.custom-parallax, .custom-parallax2, .custom-parallax3, .custom-parallax4 {
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption2 {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+#landing-btn {
+  margin-top: 200px;
+}
+#self-portrait {
+  width: 25%;
+  height: 25%;
+}
+.initial-hidden {
+  opacity: 0;
+}
+.projects {
+  background-color: transparent;
+  font-size: 25px;
+  color: #f7f7f7;
+}
+#technologies li {
+  opacity: 0;
+}
+#technologies img {
   margin: auto;
   display: block;
   width: 69px;
   height: 69px;
 }
-p {
+#technologies p {
   text-align: center;
 }
-.col s4 {
-  border: 1px solid black;
+#contact-text img {
+  width: 40px;
+  height: 40px;
 }
-.inline-text {
+#contact-text p {
   display: inline;
 }
-h1 {
-  font-weight: 200;
+#email-phone i {
+  font-size: 40px;
+  vertical-align: middle;
 }
-.navtext {
-  font-weight: 200;
+#email-phone p {
+  vertical-align: middle;
 }
-#main-wallpaper-div {
-  height: 100vh;
-}
-.main-wallpaper {
-  max-width: 100%;
-  height: auto;
-}
-.landing-name {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  width: 100%;
-  font-family: 'Amatic SC', cursive;
-  font-size: 150pt;
-}
-.landing-description {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  font-family: 'Amatic SC', cursive;
-  font-size: 75pt;
-}
-#self-portrait {
-  width: 35%;
-  height: 35%;
-}
-@ media only screen and (max-width: 500px) {
-  .landing-name {
-    font-size: .3em;
+@media all and (max-device-width: 480px) {
+  #landing-btn {
+    display: none;
   }
-  .landing-description {
-    font-size: .3em;
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 42%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 40px;
+    letter-spacing: 10px;
   }
 }
