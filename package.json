@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "jacobjyun",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/junehoe/portfolio.git"
+    "url": "git+https://github.com/sekkinsan/sekkinsan.github.io"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/junehoe/portfolio/issues"
+    "url": "https://github.com/sekkinsan/sekkinsan.github.io/issues"
   },
-  "homepage": "https://github.com/junehoe/portfolio#readme",
+  "homepage": "https://github.com/sekkinsan/sekkinsan.github.io#readme",
   "dependencies": {
     "materialize-css": "^0.98.2"
   }

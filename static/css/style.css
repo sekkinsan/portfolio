@@ -9,19 +9,24 @@ h1 {
   min-height: 100%;
 }
 .custom-parallax2 {
-  background-image: url("../images/keyboards.png");
+  background-image: url("../images/algorithm.png");
   min-height: 400px;
 }
 .custom-parallax3 {
-  background-image: url("../images/rocket.jpg");
+  background-image: url("../images/shootingstar.png");
   min-height: 400px;
 }
 .custom-parallax4 {
-  background-image: url("../images/programmer.jpg");
+  background-image: url("../images/TG.jpeg");
   min-height: 400px;
+  background-size: contain;
+  opacity: 0.70;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.custom-parallax, .custom-parallax2, .custom-parallax3, .custom-parallax4 {
-  opacity: 0.65;
+.custom-parallax, .custom-parallax2, .custom-parallax3{
+  opacity: 0.70;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,8 +76,8 @@ h1 {
 #technologies img {
   margin: auto;
   display: block;
-  width: 69px;
-  height: 69px;
+  width: 64px;
+  height: 64px;
 }
 #technologies p {
   text-align: center;
@@ -85,7 +90,7 @@ h1 {
   display: inline;
 }
 #email-phone i {
-  font-size: 40px;
+  font-size: 36px;
   vertical-align: middle;
 }
 #email-phone p {
