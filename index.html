@@ -1,202 +1,255 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <title>Jacob Yun</title>
-    <meta charset='utf-8'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link rel="icon" href="static/images/j.png"> <!--EDIT-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <!-- google icons/fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <!-- materialize.css / other css-->
-    <link rel='stylesheet' type='text/css' href='static/css/materialize/css/materialize.min.css' media='screen,projection'>
-    <link rel='stylesheet' type='text/css' href='static/css/animate.css'>
-    <link rel='stylesheet' type='text/css' href='static/css/style.css'>
-  </head>
-  <body>
-    <div class="custom-parallax">
-      <div class="caption">
-        <span class="border">JACOB YUN</span>
-        <br><br><br>
-        <span class="border">FULL-STACK WEB DEVELOPER</span>
-        <br>
-        <a id="landing-btn" class="btn-large btn-floating black pulse initial-hidden" href="#"><i class="material-icons">play_for_work</i></a>
+
+<head>
+  <title>Jacob Yun</title>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="icon" href="static/images/j.png">
+  <!--EDIT-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- google icons/fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <!-- bootstrapCDN for social media -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- materialize.css / other css-->
+  <link rel='stylesheet' type='text/css' href='static/css/materialize/css/materialize.min.css' media='screen,projection'>
+  <link rel='stylesheet' type='text/css' href='static/css/animate.css'>
+  <link rel='stylesheet' type='text/css' href='static/css/style.css'>
+</head>
+
+<body>
+  <div class="custom-parallax">
+    <div class="caption">
+      <span class="border">JACOB YUN</span>
+      <br><br><br>
+      <span class="border">FULL-STACK WEB DEVELOPER</span>
+      <br>
+      <a id="landing-btn" class="btn-large btn-floating black pulse initial-hidden" href="#"><i class="material-icons">play_for_work</i></a>
+    </div>
+  </div>
+  <!-- ABOUT ME -->
+  <div id="about-me">
+    <div class="section white">
+      <div class="row container center-align">
+        <h1 id="about-me-text" class="initial-hidden">About Me</h1>
+        <img id='self-portrait' class="initial-hidden circle" src='static/images/me.jpg'>
+        <p id="about-text" class="flow-text initial-hidden">
+          A fresh and quirky developer seeking more opportunities to learn and refine my skills. I am a graduate of
+          Loyola Marymount University and a recent graduate from Bloc, a coding bootcamp. I am currently seeking
+          opportunities to apply my skills and further develop myself as a developer.
+        </p>
       </div>
     </div>
-    <!-- ABOUT ME -->
-    <div id="about-me">
-      <div class="section white">
-	  	  <div class="row container center-align">
-        	<h1 id="about-me-text" class="initial-hidden">About Me</h1>
-          <img id='self-portrait' class="initial-hidden circle" src='static/images/me.jpg'>
-	  	  	<p id="about-text" class="flow-text initial-hidden">
-          A fresh and quirky developer seeking more opportunities to learn and refine my skills. I am a graduate of Loyola Marymount University and a recent graduate from Bloc, a coding bootcamp. I am currently seeking opportunities to apply my skills and further develop myself as a developer. 
-          </p>
-	  	  </div>
-      </div>
+  </div>
+  <div class="custom-parallax2"></div>
+  <!-- PROJECTS -->
+  <div id="projects">
+    <div class="section container">
+      <h1 id="project-text" class="center-align initial-hidden">Projects</h1>
+      <ul id="project-list" class="collapsible initial-hidden" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">games</i>Rings of Trial</div>
+          <div class="collapsible-body">
+            <span>A single-player turn based dungeon crawler for Android</span><br>
+            <span>A game where you can create your own skills and attempt to clear the different rings.</span><br>
+            <span>Features: Users can create spells, unlock different levels, defeat bosses for loot.</span><br>
+            <span>Technologies used: NativeScript, Typescript, TypeORM, PostGreSQL, JavaScript, Angular</span><br><br>
+            <a class="waves-effect waves-light btn" href="https://drive.google.com/file/d/1Umav1Op7Ba-RmZS62MC0N2NtsAGVJgQP/view?usp=sharing"
+              target="_blank">Download APK</a>
+            <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/RingsOfTrial" target="_blank">View
+              on GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">web</i>Knockitout</div>
+          <div class="collapsible-body">
+            <span>A back-end specialization project that allows users to create self-destructing to-do lists</span><br><br>
+            <span>Technologies used: Ruby, Ruby on Rails</span><br><br>
+            <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/knockitout" target="_blank">View
+              on GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">web</i>jiki</div>
+          <div class="collapsible-body">
+            <span>A back-end specialization project focused on creating a CRUD application</span><br>
+            <span>Allows users to create accounts and create, edit, view, destroy, and manage wikis.</span><br>
+            <span>Users can also pay a fee to have a premium account, to have secret wikis</span><br>
+            <span>Technologies used: Ruby, Ruby on Rails, Rspec, Stripe, Faker </span><br><br>
+            <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/jiki" target="_blank">View on
+              GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">web</i>jjams</div>
+          <div class="collapsible-body">
+            <span>A front-end focused web based application like Spotify created using Angular</span><br>
+            <span>Features: User can view an album and listen to it</span><br>
+            <span>Technologies used: JavaScript, Angular, HTML, CSS</span><br><br>
+            <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/jjams" target="_blank">View on
+              GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">menu</i>Thai Spoons WIP</div>
+          <div class="collapsible-body">
+            <span>A website for Thai Spoons, a Thai restaurant based in Santa Clara, CA.</span><br>
+            <span>Technologies used: HTML, CSS, JavaScript, jQuery, Materialize</span><br><br>
+            <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/thaispoons" target="_blank">View
+              on GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">web</i>My Portfolio</div>
+          <div class="collapsible-body">
+            <span>My personal website</span><br><br>
+            <span>Technologies used: HTML5, CSS3, JavaScript, jQuery, MaterializeCSS, AnimateCSS, AWS</span><br><br>
+            <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/portfolio" target="_blank">View
+              on GitHub</a>
+          </div>
+        </li>
+      </ul>
+      <p id="project-tooltip" class="initial-hidden center-align">** click project to view more details ** </p>
     </div>
-    <div class="custom-parallax2"></div>
-    <!-- PROJECTS -->
-    <div id="projects">
-      <div class="section container">
-        <h1 id="project-text" class="center-align initial-hidden">Projects</h1>
-			  <ul id="project-list" class="collapsible initial-hidden" data-collapsible="accordion">
+  </div>
+  <div class="custom-parallax3"></div>
+  <!-- TECHNOLOGIES -->
+  <div id="technologies">
+    <div class="section white">
+      <h1 id="tech-text" class="center-align initial-hidden">Technologies</h1>
+      <div class="row container">
+        <ul id="staggered-stacks">
           <li>
-		        <div class="collapsible-header"><i class="material-icons">games</i>Rings of Trial</div>
-		        <div class="collapsible-body">
-              <span>A single-player turn based dungeon crawler for Android</span><br>
-              <span>A game where you can create your own skills and attempt to clear the different rings.</span><br>
-              <span>Features: Users can create spells, unlock different levels, defeat bosses for loot.</span><br>
-              <span>Technologies used: NativeScript, Typescript, TypeORM, PostGreSQL, JavaScript, Angular</span><br><br>
-              <a class="waves-effect waves-light btn" href="https://drive.google.com/file/d/1Umav1Op7Ba-RmZS62MC0N2NtsAGVJgQP/view?usp=sharing" target="_blank">Download APK</a>
-              <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/RingsOfTrial" target="_blank">View on GitHub</a>
-            </div>
-		      </li>
-		      <li>
-		        <div class="collapsible-header"><i class="material-icons">web</i>Knockitout</div>
-		        <div class="collapsible-body">
-              <span>A back-end specialization project that allows users to create self-destructing to-do lists</span><br><br>
-              <span>Technologies used: Ruby, Ruby on Rails</span><br><br>
-              <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/knockitout" target="_blank">View on GitHub</a>
-            </div>
-		      </li>
-		      <li>
-		        <div class="collapsible-header"><i class="material-icons">web</i>jiki</div>
-		        <div class="collapsible-body">
-              <span>A back-end specialization project focused on creating a CRUD application</span><br>
-              <span>Allows users to create accounts and create, edit, view, destroy, and manage wikis.</span><br>
-              <span>Users can also pay a fee to have a premium account, to have secret wikis</span><br>
-              <span>Technologies used: Ruby, Ruby on Rails, Rspec, Stripe, Faker </span><br><br>
-              <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/jiki" target="_blank">View on GitHub</a>
-            </div>
-		      </li>
-		      <li>
-		        <div class="collapsible-header"><i class="material-icons">web</i>jjams</div>
-		        <div class="collapsible-body">
-              <span>A front-end focused web based application like Spotify created using Angular</span><br>
-              <span>Features: User can view an album and listen to it</span><br>
-              <span>Technologies used: JavaScript, Angular, HTML, CSS</span><br><br>
-              <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/jjams" target="_blank">View on GitHub</a>
+            <div class="col s6">
+              <img src="static/images/mean.png">
+              <p class="flow-text">MEAN</p>
+              <p>JavaScript</p>
+              <p>Angular</p>
             </div>
           </li>
           <li>
-		        <div class="collapsible-header"><i class="material-icons">menu</i>Thai Spoons WIP</div>
-		        <div class="collapsible-body">
-              <span>A website for Thai Spoons, a Thai restaurant based in Santa Clara, CA.</span><br>
-              <span>Technologies used: HTML, CSS, JavaScript, jQuery, Materialize</span><br><br>
-              <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/thaispoons" target="_blank">View on GitHub</a>
+            <div class="col s6">
+              <img src="static/images/ruby.png">
+              <p class="flow-text">Ruby</p>
+              <p>Ruby</p>
+              <p>RSpec</p>
+              <p>Rails</p>
             </div>
-		      </li>
-		      <li>
-		        <div class="collapsible-header"><i class="material-icons">web</i>My Portfolio</div>
-		        <div class="collapsible-body">
-              <span>My personal website</span><br><br>
-              <span>Technologies used: HTML5, CSS3, JavaScript, jQuery, MaterializeCSS, AnimateCSS, AWS</span><br><br>
-              <a class="waves-effect waves-light btn" href="https://github.com/sekkinsan/portfolio" target="_blank">View on GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row container">
+        <ul id="staggered-stacks2">
+          <li>
+            <div class="col s4">
+              <img src="static/images/bootstrap.png">
+              <p class="flow-text">Bootstrap</p><br>
+              <img src="static/images/materialize.png">
+              <p class="flow-text">Materialize</p><br>
+              <img src="static/images/jquery.png">
+              <p class="flow-text">jQuery</p>
             </div>
-		      </li>
-		    </ul>
-        <p id="project-tooltip" class="initial-hidden center-align">** click project to view more details ** </p>
+          </li>
+          <li style='opacity: 0;'>
+            <div class='col s4'>
+              <img class='stacks' src='static/images/html.png'>
+              <p class='flow-text'>HTML5</p><br>
+              <img class='stacks' src='static/images/css.png'>
+              <p class='flow-text'>CSS3</p><br>
+              <img class='stacks' src='static/images/VisualStudioCode.ico'>
+              <p class='flow-text'>Visual Studio Code</p>
+            </div>
+          </li>
+          <li style='opacity: 0;'>
+            <div class='col s4'>
+              <img class='stacks' src='static/images/react.png'>
+              <p class='flow-text'>React</p><br>
+              <img class='stacks' src='static/images/TypeScriptIcon.png'>
+              <p class='flow-text'>TypeScript</p><br>
+              <img class='stacks' src='static/images/TypeORMIcon.png'>
+              <p class='flow-text'>TypeORM</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="custom-parallax3"></div>
-    <!-- TECHNOLOGIES -->
-    <div id="technologies">
-      <div class="section white">
-        <h1 id="tech-text" class="center-align initial-hidden">Technologies</h1>
-        <div class="row container">
-          <ul id="staggered-stacks">
-            <li>
-              <div class="col s6">
-                <img src="static/images/mean.png">
-                <p class="flow-text">MEAN</p>
-                <p>JavaScript</p>
-                <p>Angular</p>
-              </div>
-            </li>
-            <li>
-              <div class="col s6">
-                <img src="static/images/ruby.png">
-                <p class="flow-text">Ruby</p>
-                <p>Ruby</p>
-                <p>RSpec</p>
-                <p>Rails</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="row container">
-          <ul id="staggered-stacks2">
-            <li>
-              <div class="col s4">
-                <img src="static/images/bootstrap.png">
-                <p class="flow-text">Bootstrap</p><br>
-                <img src="static/images/materialize.png">
-                <p class="flow-text">Materialize</p><br>
-                <img src="static/images/jquery.png">
-                <p class="flow-text">jQuery</p>
-              </div>
-            </li>
-            <li style='opacity: 0;'>
-              <div class='col s4'>
-                <img class='stacks' src='static/images/html.png'>
-                <p class='flow-text'>HTML5</p><br>
-                <img class='stacks' src='static/images/css.png'>
-                <p class='flow-text'>CSS3</p><br>
-                <img class='stacks' src='static/images/VisualStudioCode.ico'>
-                <p class='flow-text'>Visual Studio Code</p>
-              </div>
-            </li>
-            <li style='opacity: 0;'>
-              <div class='col s4'>
-                <img class='stacks' src='static/images/react.png'>
-                <p class='flow-text'>React</p><br>
-                <img class='stacks' src='static/images/TypeScriptIcon.png'>
-                <p class='flow-text'>TypeScript</p><br>
-                <img class='stacks' src='static/images/TypeORMIcon.png'>
-                <p class='flow-text'>TypeORM</p>
-              </div>
-            </li>
-          </ul>
+  </div>
+  <div class="custom-parallax4"></div>
+  <!-- FOOTER -->
+  <footer class="page-footer white">
+    <div id="contact" class="container">
+      <div class="row">
+        <div id="contact-header" class="col s12 initial-hidden">
+          <p class="flow-text black-text center-align">Interested in working together, chatting, or grabbing coffee?</p>
         </div>
       </div>
-    </div>
-    <div class="custom-parallax4"></div>
-    <!-- FOOTER -->
-		<footer class="page-footer white">
-    	<div id="contact" class="container">
-      	<div class="row">
-        	<div id="contact-header" class="col s12 initial-hidden">
-           	<p class="flow-text black-text center-align">Interested in working together, chatting, or grabbing coffee?</p>
-      		</div>
-        </div>
-        <div id="contact-text" class="center-align initial-hidden">
-          <div id="email-phone" class="row">
-            <div class="col s6">
-      		    <i class="material-icons">perm_identity</i><p class="flow-text inline-text">jacob.yun429@gmail.com</p>
-            </div>
-            <div class="col s6">
-      		    <i class="material-icons">phonelink_ring</i><p class="flow-text inline-text">(408)691-5851</p>
-            </div>
+      <div id="contact-text" class="center-align initial-hidden">
+        <div id="email-phone" class="row">
+          <div class="col s6">
+            <i class="material-icons">perm_identity</i>
+            <p class="flow-text inline-text">jacob.yun429@gmail.com</p>
           </div>
-          <br>
-          <a href="static/docs/jacobyun20180403WEBDEV.pdf" target="_blank"><img src="static/images/resume.png"></a>
-          <a href="https://www.linkedin.com/in/jacobyun/" target="_blank"><img src="static/images/linked-in.svg"></a>
-          <a href="https://www.github.com/sekkinsan" target='_blank'><img src='static/images/github.svg' style='height: 40px; width: 40px;'></a>
-          <a href="https://www.instagram.com/jjyun_" target="_blank"><img src="static/images/instagram.jpg"></a>
-          <br><br>
-          <br><br>
-          <a id="to-top2" href="#" class="black-text text-lighten-4 flow-text initial-hidden">Back to Top</a>
+          <div class="col s6">
+            <i class="material-icons">phonelink_ring</i>
+            <p class="flow-text inline-text">(408)691-5851</p>
+          </div>
         </div>
+        <br>
+        <div id="social-media">
+        <ul>
+          <li>
+            <a href="static/docs/jacobyun20180403WEBDEV.pdf" target="_blank">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jacobyun/" target="_blank">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/sekkinsan" target='_blank'>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-github-square" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jjyun_" target="_blank">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-instagram" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+        </div>
+        <br><br>
+        <br><br>
+        <a id="to-top2" href="#" class="black-text text-lighten-4 flow-text initial-hidden">Back to Top</a>
       </div>
-      <div class="footer-copyright">
-      </div>
-    </footer>
-    <!-- SCRIPTS -->
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="static/css/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="static/js/main.js"></script>
-  </body>
+    </div>
+    <div class="footer-copyright">
+    </div>
+  </footer>
+  <!-- SCRIPTS -->
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="static/css/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="static/js/main.js"></script>
+</body>
+
 </html>
